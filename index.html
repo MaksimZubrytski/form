@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Пользовательская форма</title>
 </head>
 <body>
-    <form>
-        <p><input placeholder="Имя пользователя" name="login"></p>
-        <p><input placeholder="Телефон" name="phone_number"></p>
-        <p><input placeholder="e-mail" name="e-mail"></p>
-        <p><input placeholder="Пароль" name="password" type="password"></p>
-        <p><b>Сколько вам лет?</b></p>
-        <p><input type="radio" name="answer" value="a1">Меньше 18<br>
-        <input type="radio" name="answer" value="a2">Больше 18<br></p>
-        <p><b>Ваш пол?</b></p>
-        <p><input type="radio" name="answer1" value="a1">Мужской<br>
-        <input type="radio" name="answer1" value="a2">Женский<br></p>
-        <p><textarea name="comment" placeholder="Напишите ваши пожелания" cols="50" rows="10"></textarea></p>
-        <p><input type="submit" value="Отправить"></p>
-        <p><input type="reset" value="Очистить форму"></p>
-    </form>
+    <header>
+        <h1>Данные пользователя</h1>
+    </header>
+    <main>
+        <form>
+            <p><input type="text" placeholder="Имя пользователя" name="login"></p>
+            <p><input type="text" placeholder="Телефон" name="phone_number"></p>
+            <p><input type="text" placeholder="e-mail" name="e-mail"></p>
+            <p><input type="password" placeholder="Пароль" name="password"></p>
+            <p><b>Сколько вам лет?</b></p>
+            <p><label><input type="radio" name="age" id="less18">Меньше 18</label><br>
+            <label><input type="radio" name="age" id="more18">Больше 18</label><br></p>
+            <p><b>Ваш пол?</b></p>
+            <p><label><input type="radio" name="sex" id="male">Мужской</label><br>
+            <label><input type="radio" name="sex" id="female">Женский</label><br></p>
+            <p><textarea name="comment" placeholder="Напишите ваши пожелания" cols="50" rows="10"></textarea></p>
+            <p><input type="submit" value="Отправить"></p>
+            <p><input type="reset" value="Очистить форму"></p>
+        </form>
+    </main>
 </body>
 </html>
